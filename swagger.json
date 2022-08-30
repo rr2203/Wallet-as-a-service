@@ -1,0 +1,66 @@
+{
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "schemes": [
+    "http",
+    "https"
+  ],
+  "swagger": "2.0",
+  "info": {
+    "description": "this is to show how to write RESTful APIs in golang.\nthat is to provide a detailed overview of the language specs",
+    "title": "Account API.",
+    "contact": {
+      "name": "Supun Muthutantri",
+      "email": "mydocs@example.com"
+    },
+    "version": "1.0.0"
+  },
+  "host": "localhost:8080",
+  "paths": {
+    "/accounts/": {
+      "post": {
+        "description": "If account creation is success, account will be returned with Created (201).",
+        "tags": [
+          "accounts"
+        ],
+        "summary": "Creates a new account.",
+        "operationId": "createAccount",
+        "parameters": [
+          {
+            "description": "account to add to the list of accounts",
+            "name": "account",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "$ref": "entities.User"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "$ref": "User%20Created%20Successfully"
+          },
+          "400": {
+            "$ref": "Something%20went%20wrong"
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions": {
+    "api_key": {
+      "type": "apiKey",
+      "name": "KEY",
+      "in": "header"
+    }
+  },
+  "security": [
+    {
+      "api_key": []
+    }
+  ]
+}
