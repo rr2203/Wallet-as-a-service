@@ -1,6 +1,6 @@
 # Wallet-as-a-service
 
-Production Quality Backend for Wallet As A Service in Golang.
+Wrote from scratch, a production quality backend for wallet as a service in Golang.
 
 - Developed a decoupled, extensible backend for a Wallet-as-a-Service application using Go.
 - Utilized Redis for caching and implemented cron jobs for automated processes.
