@@ -4,5 +4,5 @@ Wrote from scratch, a production quality backend for wallet as a service in Gola
 
 - Developed a decoupled, extensible backend for a Wallet-as-a-Service application using Go.
 - Utilized Redis for caching and implemented cron jobs for automated processes.
-- Implemented a MySQL database for data storage.
+- Used a MySQL database for data storage.
 - Created clean and organized code with a focus on maintainability and scalability.
